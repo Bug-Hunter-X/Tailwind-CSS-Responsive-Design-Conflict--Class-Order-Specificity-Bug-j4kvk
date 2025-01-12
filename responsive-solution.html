@@ -1,0 +1,8 @@
+The solution involves carefully structuring your HTML classes to ensure proper specificity.  Using the `@apply` directive or consistently applying classes in a predictable order, from more to less specific, should resolve the issue.  In `responsive-solution.html` the order of classes is adjusted to correctly apply responsive styles.  Prioritizing the larger breakpoint class, `lg:p-8`, before the smaller breakpoint class, `md:p-4`, ensures that the intended styles are applied.
+
+```html
+<!-- responsive-solution.html -->
+<div class="lg:p-8 md:p-4 p-2 bg-gray-200">
+  This div demonstrates the solution.
+</div>
+```
